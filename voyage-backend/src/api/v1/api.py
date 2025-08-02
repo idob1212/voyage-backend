@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 
-from .endpoints import auth, agents, hotels, offers, bookings
+from api.v1.endpoints import auth, agents, hotels, offers, bookings
 
 api_router = APIRouter()
 

@@ -1,7 +1,7 @@
 from typing import List, Optional, Dict
 from pydantic import Field
-from .base import BaseDocument, PyObjectId
-from ..core.constants import HotelAmenity, RoomType
+from models.base import BaseDocument, PyObjectId
+from core.constants import HotelAmenity, RoomType
 
 
 class HotelLocation(BaseDocument):

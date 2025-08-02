@@ -1,7 +1,7 @@
 from datetime import datetime
 from typing import Optional, List
 from pydantic import BaseModel, Field, EmailStr
-from ..core.constants import BookingStatus, PaymentStatus
+from core.constants import BookingStatus, PaymentStatus
 
 
 class GuestInfoCreate(BaseModel):

@@ -1,7 +1,7 @@
 from typing import Optional
 from pydantic import EmailStr, Field
-from .base import BaseDocument, PyObjectId
-from ..core.constants import UserType
+from models.base import BaseDocument, PyObjectId
+from core.constants import UserType
 
 
 class User(BaseDocument):

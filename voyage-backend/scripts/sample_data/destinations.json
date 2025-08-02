@@ -1,0 +1,92 @@
+[
+  {
+    "country": "France",
+    "city": "Paris",
+    "region": "Île-de-France",
+    "popular_areas": ["Champs-Élysées", "Marais", "Saint-Germain", "Montmartre", "Louvre"]
+  },
+  {
+    "country": "United Kingdom",
+    "city": "London",
+    "region": "Greater London",
+    "popular_areas": ["Covent Garden", "Mayfair", "Kensington", "Westminster", "South Bank"]
+  },
+  {
+    "country": "UAE",
+    "city": "Dubai",
+    "region": "Dubai",
+    "popular_areas": ["Downtown Dubai", "Dubai Marina", "Palm Jumeirah", "Jumeirah Beach", "Deira"]
+  },
+  {
+    "country": "Japan",
+    "city": "Tokyo",
+    "region": "Kanto",
+    "popular_areas": ["Shibuya", "Shinjuku", "Ginza", "Asakusa", "Roppongi"]
+  },
+  {
+    "country": "Italy",
+    "city": "Rome",
+    "region": "Lazio",
+    "popular_areas": ["Vatican City", "Trastevere", "Spanish Steps", "Colosseum", "Pantheon"]
+  },
+  {
+    "country": "Spain",
+    "city": "Barcelona",
+    "region": "Catalonia",
+    "popular_areas": ["Gothic Quarter", "Eixample", "Park Güell", "Las Ramblas", "Barceloneta"]
+  },
+  {
+    "country": "Turkey",
+    "city": "Istanbul",
+    "region": "Marmara",
+    "popular_areas": ["Sultanahmet", "Beyoğlu", "Kadıköy", "Beşiktaş", "Galata"]
+  },
+  {
+    "country": "Thailand",
+    "city": "Bangkok",
+    "region": "Central Thailand",
+    "popular_areas": ["Sukhumvit", "Silom", "Khao San Road", "Chatuchak", "Thonburi"]
+  },
+  {
+    "country": "USA",
+    "city": "New York",
+    "region": "New York",
+    "popular_areas": ["Manhattan", "Times Square", "SoHo", "Greenwich Village", "Brooklyn"]
+  },
+  {
+    "country": "Germany",
+    "city": "Berlin",
+    "region": "Brandenburg",
+    "popular_areas": ["Mitte", "Kreuzberg", "Prenzlauer Berg", "Charlottenburg", "Friedrichshain"]
+  },
+  {
+    "country": "India",
+    "city": "Mumbai",
+    "region": "Maharashtra",
+    "popular_areas": ["South Mumbai", "Bandra", "Juhu", "Andheri", "Powai"]
+  },
+  {
+    "country": "Singapore",
+    "city": "Singapore",
+    "region": "Central Region",
+    "popular_areas": ["Marina Bay", "Chinatown", "Little India", "Orchard Road", "Sentosa"]
+  },
+  {
+    "country": "Australia",
+    "city": "Sydney",
+    "region": "New South Wales",
+    "popular_areas": ["CBD", "Bondi", "Darling Harbour", "The Rocks", "Manly"]
+  },
+  {
+    "country": "Greece",
+    "city": "Athens",
+    "region": "Attica",
+    "popular_areas": ["Plaka", "Monastiraki", "Psyrri", "Kolonaki", "Exarchia"]
+  },
+  {
+    "country": "Egypt",
+    "city": "Cairo",
+    "region": "Greater Cairo",
+    "popular_areas": ["Downtown", "Zamalek", "Heliopolis", "Maadi", "Giza"]
+  }
+]

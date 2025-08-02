@@ -1,7 +1,7 @@
 from datetime import date, datetime
 from typing import List, Optional
 from pydantic import BaseModel, Field, validator
-from ..core.constants import OfferStatus, RoomType
+from core.constants import OfferStatus, RoomType
 
 
 class RoomRequestCreate(BaseModel):

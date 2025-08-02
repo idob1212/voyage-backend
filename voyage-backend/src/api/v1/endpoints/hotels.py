@@ -2,16 +2,16 @@ from typing import List
 from fastapi import APIRouter, Depends, HTTPException, status, Query
 from motor.motor_asyncio import AsyncIOMotorDatabase
 
-from ....services.auth import get_current_active_user
-from ....services.hotel import HotelService
-from ....services.agent import AgentService
-from ....schemas.hotel import (
+from services.auth import get_current_active_user
+from services.hotel import HotelService
+from services.agent import AgentService
+from schemas.hotel import (
     HotelCreate, HotelUpdate, HotelResponse, HotelSearchFilters
 )
-from ....schemas.base import ResponseModel, PaginationParams, PaginatedResponse
-from ....db.session import get_db
-from ....core.constants import UserType, HotelAmenity, RoomType
-from ....utils.validators import validate_object_id
+from schemas.base import ResponseModel, PaginationParams, PaginatedResponse
+from db.session import get_db
+from core.constants import UserType, HotelAmenity, RoomType
+from utils.validators import validate_object_id
 
 router = APIRouter()
 

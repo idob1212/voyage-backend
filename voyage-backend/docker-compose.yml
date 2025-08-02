@@ -2,14 +2,14 @@ version: '3.8'
 
 services:
   mongodb:
-    image: mongo:7.0.2
+    image: mongo:7.0
     container_name: voyage_mongodb
     restart: unless-stopped
     ports:
       - "27017:27017"
     environment:
-      MONGO_INITDB_ROOT_USERNAME: voyage_user
-      MONGO_INITDB_ROOT_PASSWORD: voyage_pass
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: admin123
       MONGO_INITDB_DATABASE: voyage_db
     volumes:
       - mongodb_data:/data/db
@@ -31,14 +31,26 @@ services:
     ports:
       - "8000:8000"
     environment:
-      - MONGODB_URL=mongodb://voyage_user:voyage_pass@mongodb:27017/voyage_db?authSource=admin
       - REDIS_URL=redis://redis:6379
+    env_file:
+      - .env
     depends_on:
-      - mongodb
       - redis
     volumes:
       - .:/app
-    command: uvicorn src.main:app --host 0.0.0.0 --port 8000 --reload
+    command: sh -c "cd /app && PYTHONPATH=/app/src uvicorn src.main:app --host 0.0.0.0 --port 8000 --reload"
+
+  seed:
+    build: .
+    container_name: voyage_seed
+    env_file:
+      - .env
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: python scripts/seed_data.py
+    profiles:
+      - seed
 
 volumes:
   mongodb_data:

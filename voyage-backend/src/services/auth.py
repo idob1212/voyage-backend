@@ -5,7 +5,7 @@ from fastapi import HTTPException, status, Depends
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from bson import ObjectId
 
-from ..core.security import (
+from core.security import (
     verify_password, 
     get_password_hash, 
     create_access_token,
@@ -13,10 +13,10 @@ from ..core.security import (
     verify_token,
     verify_refresh_token
 )
-from ..models.user import User
-from ..schemas.user import UserCreate, UserLogin, TokenResponse
-from ..utils.helpers import prepare_document_for_response
-from ..db.session import get_db
+from models.user import User
+from schemas.user import UserCreate, UserLogin, TokenResponse
+from utils.helpers import prepare_document_for_response
+from db.session import get_db
 
 security = HTTPBearer()
 

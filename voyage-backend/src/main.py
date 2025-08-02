@@ -6,9 +6,9 @@ from fastapi.responses import JSONResponse
 import uvicorn
 import logging
 
-from .core.config import settings
-from .db.mongodb import connect_to_mongo, close_mongo_connection
-from .api.v1.api import api_router
+from core.config import settings
+from db.mongodb import connect_to_mongo, close_mongo_connection
+from api.v1.api import api_router
 
 
 # Configure logging
@@ -48,7 +48,7 @@ app = FastAPI(
 if settings.BACKEND_CORS_ORIGINS:
     app.add_middleware(
         CORSMiddleware,
-        allow_origins=[str(origin) for origin in settings.BACKEND_CORS_ORIGINS],
+        allow_origins=[str(origin).rstrip('/') for origin in settings.BACKEND_CORS_ORIGINS],
         allow_credentials=True,
         allow_methods=["*"],
         allow_headers=["*"],

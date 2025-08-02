@@ -1,6 +1,6 @@
 from typing import List, Optional
 from pydantic import BaseModel, Field, HttpUrl
-from ..core.constants import Specialization
+from core.constants import Specialization
 
 
 class LocationCreate(BaseModel):

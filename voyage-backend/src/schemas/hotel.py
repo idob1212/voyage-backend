@@ -1,6 +1,6 @@
 from typing import List, Optional, Dict
 from pydantic import BaseModel, Field
-from ..core.constants import HotelAmenity, RoomType
+from core.constants import HotelAmenity, RoomType
 
 
 class HotelLocationCreate(BaseModel):

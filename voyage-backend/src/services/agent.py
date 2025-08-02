@@ -3,16 +3,16 @@ from motor.motor_asyncio import AsyncIOMotorDatabase
 from fastapi import HTTPException, status
 from bson import ObjectId
 
-from ..models.agent import TravelAgent, DMCAgent
-from ..schemas.agent import (
+from models.agent import TravelAgent, DMCAgent
+from schemas.agent import (
     TravelAgentCreate, TravelAgentUpdate, TravelAgentResponse,
     DMCAgentCreate, DMCAgentUpdate, DMCAgentResponse,
     AgentSearchFilters
 )
-from ..schemas.base import PaginationParams
-from ..utils.helpers import prepare_document_for_response
-from ..utils.pagination import paginate_collection
-from ..core.constants import UserType
+from schemas.base import PaginationParams
+from utils.helpers import prepare_document_for_response
+from utils.pagination import paginate_collection
+from core.constants import UserType
 
 
 class AgentService:

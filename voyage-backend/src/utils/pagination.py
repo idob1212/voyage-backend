@@ -1,6 +1,6 @@
 from typing import Dict, Any, List, TypeVar, Generic
 from motor.motor_asyncio import AsyncIOMotorCollection
-from ..schemas.base import PaginationParams, PaginatedResponse
+from schemas.base import PaginationParams, PaginatedResponse
 
 T = TypeVar('T')
 

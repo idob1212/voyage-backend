@@ -1,8 +1,8 @@
 from datetime import datetime
 from typing import Optional, Dict, List
 from pydantic import Field
-from .base import BaseDocument, PyObjectId
-from ..core.constants import BookingStatus, PaymentStatus
+from models.base import BaseDocument, PyObjectId
+from core.constants import BookingStatus, PaymentStatus
 
 
 class GuestInfo(BaseDocument):

@@ -1,7 +1,7 @@
 from typing import List, Optional
 from pydantic import Field
-from .base import BaseDocument, PyObjectId
-from ..core.constants import Specialization
+from models.base import BaseDocument, PyObjectId
+from core.constants import Specialization
 
 
 class Location(BaseDocument):

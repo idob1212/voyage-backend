@@ -1,10 +1,10 @@
 from fastapi import HTTPException, status, Depends
 from motor.motor_asyncio import AsyncIOMotorDatabase
 
-from ..services.auth import get_current_active_user
-from ..services.agent import AgentService
-from ..core.constants import UserType
-from ..db.session import get_db
+from services.auth import get_current_active_user
+from services.agent import AgentService
+from core.constants import UserType
+from db.session import get_db
 
 
 async def get_current_travel_agent(

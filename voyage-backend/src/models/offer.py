@@ -1,8 +1,8 @@
 from datetime import datetime, date
 from typing import List, Optional, Dict
 from pydantic import Field
-from .base import BaseDocument, PyObjectId
-from ..core.constants import OfferStatus, RoomType
+from models.base import BaseDocument, PyObjectId
+from core.constants import OfferStatus, RoomType
 
 
 class RoomRequest(BaseDocument):

@@ -1,5 +1,5 @@
 from motor.motor_asyncio import AsyncIOMotorDatabase
-from .mongodb import get_database
+from db.mongodb import get_database
 from typing import AsyncGenerator
 
 

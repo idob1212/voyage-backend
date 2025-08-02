@@ -1,6 +1,6 @@
 from typing import Optional
 from pydantic import BaseModel, EmailStr, Field, validator
-from ..core.constants import UserType
+from core.constants import UserType
 
 
 class UserCreate(BaseModel):

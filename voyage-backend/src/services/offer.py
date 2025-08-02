@@ -4,12 +4,12 @@ from motor.motor_asyncio import AsyncIOMotorDatabase
 from fastapi import HTTPException, status
 from bson import ObjectId
 
-from ..models.offer import Offer
-from ..schemas.offer import OfferCreate, OfferQuote, OfferSearchFilters
-from ..schemas.base import PaginationParams
-from ..utils.helpers import prepare_document_for_response, calculate_nights, calculate_commission
-from ..utils.pagination import paginate_collection
-from ..core.constants import UserType, OfferStatus
+from models.offer import Offer
+from schemas.offer import OfferCreate, OfferQuote, OfferSearchFilters
+from schemas.base import PaginationParams
+from utils.helpers import prepare_document_for_response, calculate_nights, calculate_commission
+from utils.pagination import paginate_collection
+from core.constants import UserType, OfferStatus
 
 
 class OfferService:
